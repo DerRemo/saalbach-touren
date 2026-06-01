@@ -1072,3 +1072,100 @@ input[type=range]:active::-webkit-slider-thumb {
   
   /* Show filter as sidebar or structured layout */
 }
+
+/* --- Quartier features --- */
+.header-actions { display: flex; align-items: center; gap: 6px; }
+
+.tour-distance {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text-muted, #9aa0a6);
+  margin: 2px 0 4px;
+}
+.tour-distance .near-tag {
+  color: #e8590c;
+  font-weight: 600;
+}
+
+.card-actions { display: flex; gap: 8px; align-items: stretch; }
+.card-actions .download-gpx-btn { flex: 1; }
+.route-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.route-btn:hover { background: rgba(255, 255, 255, 0.14); }
+
+/* Quartier modal map + overlay */
+.quartier-map {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 12px 0 8px;
+  touch-action: none; /* let the pin handle drags, not the page scroll */
+}
+.quartier-map img { display: block; width: 100%; height: auto; }
+.quartier-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.ov-start {
+  fill: #e3262e;
+  stroke: #fff;
+  stroke-width: 2;
+  cursor: pointer;
+}
+.ov-home {
+  fill: #22c55e;
+  stroke: #fff;
+  stroke-width: 3;
+  cursor: grab;
+}
+.ov-home:active { cursor: grabbing; }
+
+.quartier-current { font-size: 0.9rem; font-weight: 600; margin: 0 0 10px; }
+.quartier-controls { display: flex; flex-direction: column; gap: 10px; }
+.quartier-btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.quartier-btn:hover { background: rgba(255, 255, 255, 0.12); }
+.quartier-paste-row { display: flex; gap: 8px; }
+.quartier-paste-row input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+.quartier-hint { font-size: 0.78rem; color: var(--text-muted, #9aa0a6); margin: 0; }
+.quartier-hint.error { color: #ff6b6b; }
+.quartier-reset {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: var(--accent, #e8590c);
+  font-size: 0.85rem;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
