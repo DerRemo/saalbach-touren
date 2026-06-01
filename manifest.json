@@ -1,7 +1,7 @@
 {
   "name": "Saalbach Tourenfinder",
   "short_name": "Saalbach",
-  "description": "Finde und downloade MTB & E-Bike Touren in Saalbach für deinen Sigma Rox 4.0",
+  "description": "Finde, filtere und lade MTB-, E-Bike- & Gravel-Touren in Saalbach-Hinterglemm als GPX – für GPS-Gerät, Navi-App oder Bike-Computer.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#121416",

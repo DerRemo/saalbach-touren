@@ -1007,6 +1007,28 @@ input[type=range]:active::-webkit-slider-thumb {
   color: var(--color-orange);
 }
 
+.modal-intro {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin-bottom: 18px;
+}
+
+.modal-note {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+  margin: 18px 0 12px;
+}
+
+.modal-note strong {
+  color: var(--text-primary);
+}
+
 .modal-footer {
   padding: 16px;
   border-top: 1px solid var(--border-color);

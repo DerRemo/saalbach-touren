@@ -50,7 +50,7 @@
     <!-- Hero / Intro -->
     <section class="intro-section">
       <h1 id="introTitle">Finde deine nächste Tour</h1>
-      <p>Schnell filtern, GPX herunterladen und auf deinen Sigma Rox 4.0 laden.</p>
+      <p>Schnell filtern, GPX herunterladen und auf dein GPS-Gerät oder in deine Navi-App laden.</p>
     </section>
 
     <!-- Touren / Trails Mode Toggle -->
@@ -205,48 +205,54 @@
     </div>
   </div>
 
-  <!-- Help Modal (Sigma Sync Instruction) -->
+  <!-- Help Modal (GPX import instructions) -->
   <div class="modal-overlay" id="helpModalOverlay"></div>
   <div class="modal" id="helpModal">
     <div class="modal-header">
-      <h2>Sigma Rox 4.0 GPX-Übertragung</h2>
+      <h2>GPX herunterladen & nutzen</h2>
       <button class="close-modal-btn" id="closeHelpBtn">&times;</button>
     </div>
     <div class="modal-body">
+      <p class="modal-intro">Die Touren werden als <strong>GPX</strong> heruntergeladen – ein Standardformat, das mit nahezu jeder Navi-App und jedem GPS-Bike-Computer funktioniert (z.&nbsp;B. Komoot, Garmin Connect, Wahoo, Sigma Ride).</p>
       <div class="steps-list">
         <div class="step-item">
           <div class="step-num">1</div>
           <div class="step-text">
-            <strong>Tour finden & Downloaden:</strong><br>
-            Wähle eine Tour in der App aus und tippe auf <strong>GPX Herunterladen</strong>. Die Datei wird in Safari auf deinem iPhone gespeichert.
+            <strong>Tour finden & herunterladen:</strong><br>
+            Wähle eine Tour aus und tippe auf <strong>GPX Herunterladen</strong>. Die Datei wird auf deinem Gerät gespeichert (dafür ist kurz eine Internetverbindung nötig).
           </div>
         </div>
         <div class="step-item">
           <div class="step-num">2</div>
           <div class="step-text">
             <strong>Datei öffnen:</strong><br>
-            Tippe in Safari auf das Download-Symbol (Blauer Pfeil) unten links in der Adressleiste, wähle die heruntergeladene GPX-Datei aus.
+            Öffne die heruntergeladene GPX-Datei (auf dem iPhone z.&nbsp;B. über das Download-Symbol in Safari).
           </div>
         </div>
         <div class="step-item">
           <div class="step-num">3</div>
           <div class="step-text">
-            <strong>In Sigma Ride App importieren:</strong><br>
-            Tippe auf das <strong>Teilen/Senden-Symbol</strong> (Quadrat mit Pfeil nach oben) und wähle die <strong>SIGMA RIDE</strong> App aus der Liste aus.
+            <strong>In deine App importieren:</strong><br>
+            Über das <strong>Teilen-Symbol</strong> die GPX-Datei an deine Navi-App übergeben – oder die Datei direkt aus der App importieren.
           </div>
         </div>
         <div class="step-item">
           <div class="step-num">4</div>
           <div class="step-text">
-            <strong>Synchronisieren:</strong><br>
-            Die Sigma Ride App importiert den Track automatisch als Route. Schalte deinen <strong>Sigma Rox 4.0</strong> ein – er synchronisiert sich via Bluetooth und lädt den Track auf dein Gerät.
+            <strong>Auf dein Gerät übertragen:</strong><br>
+            Die App synchronisiert den Track auf deinen Bike-Computer bzw. dein GPS (meist via Bluetooth).
           </div>
         </div>
       </div>
-      
+
+      <div class="modal-note">
+        <strong>🚴 Warum diese App?</strong><br>
+        Ich fahre selbst mit einem <strong>Sigma Rox 4.0</strong> und habe diese Web-App gebaut, um die Saalbach-Touren schnell als GPX auf mein Gerät zu bekommen. In der <strong>Sigma Ride</strong> App importierst du die Datei einfach über das Teilen-Symbol – der Rox lädt den Track dann via Bluetooth. Mit anderen Geräten klappt es genauso.
+      </div>
+
       <div class="modal-pwa-tip">
         <strong>💡 Tipp für Saalbach:</strong><br>
-        Tippe in Safari unten auf das <strong>Teilen-Symbol</strong> und wähle <strong>„Zum Home-Bildschirm hinzufügen“</strong>. Dadurch läuft die App wie eine echte App auf deinem iPhone und funktioniert dank Offline-Speicher auch mitten in den Bergen!
+        Tippe in Safari unten auf das <strong>Teilen-Symbol</strong> und wähle <strong>„Zum Home-Bildschirm hinzufügen“</strong>. Dann läuft die App wie eine echte App – Touren und Karten kannst du dank Offline-Speicher auch ohne Netz durchstöbern. Nur der GPX-Download selbst braucht kurz eine Internetverbindung.
       </div>
     </div>
     <div class="modal-footer">

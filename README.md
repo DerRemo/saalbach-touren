@@ -1,7 +1,7 @@
 <div align="center">
   <img src="icons/icon-192.png" width="96" alt="Saalbach Tourenfinder Icon">
   <h1>Saalbach Tourenfinder</h1>
-  <p><strong>Finde, filtere und lade GPX-Bike-Touren in Saalbach-Hinterglemm – offline-tauglich für den Sigma Rox 4.0.</strong></p>
+  <p><strong>Finde, filtere und lade GPX-Bike-Touren in Saalbach-Hinterglemm – für GPS-Gerät, Navi-App oder Bike-Computer.</strong></p>
   <p>🌐 <a href="https://derremo.github.io/saalbach-touren/">derremo.github.io/saalbach-touren</a></p>
 </div>
 
@@ -9,9 +9,11 @@
 
 ## Über die App
 
-Eine **Progressive Web App** (PWA) zum schnellen Finden und Herunterladen von Mountainbike-, E-Bike- und Gravel-Touren rund um Saalbach-Hinterglemm. Tour aussuchen, GPX herunterladen und per *Sigma Ride* auf den **Sigma Rox 4.0** übertragen – die Anleitung dazu ist in der App hinterlegt.
+Eine **Progressive Web App** (PWA) zum schnellen Finden und Herunterladen von Mountainbike-, E-Bike- und Gravel-Touren rund um Saalbach-Hinterglemm. Tour aussuchen, **GPX** herunterladen und in die Navi-App oder auf den Bike-Computer deiner Wahl laden (z. B. Komoot, Garmin, Wahoo, Sigma Ride).
 
-Gebaut als reine PWA ohne Framework und ohne Backend: einmal geladen, läuft sie **vollständig offline** – ideal mitten in den Bergen.
+> **Mein Anwendungsfall:** Ich fahre selbst mit einem **Sigma Rox 4.0** und habe diese Web-App gebaut, um die Saalbach-Touren schnell als GPX auf mein Gerät zu bekommen. GPX ist ein offenes Standardformat – es funktioniert genauso mit anderen Geräten und Apps.
+
+Gebaut als reine PWA ohne Framework und ohne Backend. Oberfläche, Tourliste und Streckenkarten sind offline verfügbar; der **GPX-Download** selbst lädt die Datei live von Outdooractive und benötigt daher eine Internetverbindung.
 
 ## Funktionen
 
@@ -19,8 +21,8 @@ Gebaut als reine PWA ohne Framework und ohne Backend: einmal geladen, läuft sie
 - 🗺️ **Streckenkarte pro Tour** – lokal gerenderte CARTO-Light-Karte mit eingezeichneter Route, offline gebündelt
 - 🔀 **Touren / Trails-Umschalter** – echte Touren oder einzelne Bikepark-Lines
 - 🔎 **Filter** nach Suche, Kategorie, Länge, Dauer und Schwierigkeit, plus Sortierung
-- ⬇️ **GPX-Download** direkt aufs iPhone, inkl. Schritt-für-Schritt-Anleitung zur Sigma-Übertragung
-- 📲 **Installierbar** (Zum Home-Bildschirm hinzufügen) und **offline-fähig** dank Service Worker
+- ⬇️ **GPX-Download** direkt aufs Gerät, inkl. Schritt-für-Schritt-Anleitung zum Import in Navi-Apps
+- 📲 **Installierbar** (Zum Home-Bildschirm hinzufügen); Oberfläche, Touren & Karten sind **offline** verfügbar (der GPX-Download selbst braucht Internet)
 
 ## Auf dem iPhone installieren
 
