@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <!-- Optimized viewport for mobile screens, prevents zoom on text input focus on iOS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Saalbach Tourenfinder</title>
+  
+  <!-- Manifest & PWA Configuration -->
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#121416">
+  
+  <!-- Apple Web App Capability (Add to Home Screen) -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Saalbach">
+  <link rel="apple-touch-icon" href="https://img.icons8.com/color/192/bicycle.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="logo-area">
+        <svg class="header-logo-icon" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="5.5" cy="17.5" r="2.5"></circle>
+          <circle cx="18.5" cy="17.5" r="2.5"></circle>
+          <path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3 11.5V14l-3-3 4-3 2 3h4"></path>
+        </svg>
+        <span class="app-title">Saalbach <span class="accent-text">Bikes</span></span>
+      </div>
+      <button class="help-btn" id="openHelpBtn" aria-label="Hilfe zur Übertragung">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+          <line x1="12" y1="17" x2="12.01" y2="17"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <main class="app-main">
+    
+    <!-- Hero / Intro -->
+    <section class="intro-section">
+      <h1 id="introTitle">Finde deine nächste Tour</h1>
+      <p>Schnell filtern, GPX herunterladen und auf deinen Sigma Rox 4.0 laden.</p>
+    </section>
+
+    <!-- Touren / Trails Mode Toggle -->
+    <div class="view-toggle" id="viewToggle" role="tablist" aria-label="Ansicht">
+      <button class="view-btn active" data-view="touren" role="tab" aria-selected="true">🚲 Touren</button>
+      <button class="view-btn" data-view="trails" role="tab" aria-selected="false">🤘 Trails</button>
+    </div>
+
+    <!-- Search & Filter Controls Panel -->
+    <div class="search-filter-panel">
+      <!-- Search Bar -->
+      <div class="search-container">
+        <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" placeholder="Tourname suchen..." autocomplete="off">
+        <button class="clear-search-btn" id="clearSearchBtn" style="display: none;">&times;</button>
+      </div>
+
+      <!-- Quick Category Chips (hidden in Trails view) -->
+      <div class="category-chips-wrapper" id="categoryChipsWrapper">
+        <div class="category-chips" id="categoryChips">
+          <button class="chip active" data-category="bike">🚲 Alle Bikes</button>
+          <button class="chip" data-category="mtb">🏔️ Mountainbike</button>
+          <button class="chip" data-category="ebike">⚡ E-Bike</button>
+          <button class="chip" data-category="gravel">🪨 Gravelbike</button>
+        </div>
+      </div>
+
+      <!-- Active Filters Display Bar -->
+      <div class="active-filters-summary">
+        <div class="summary-text" id="filtersSummaryText">
+          Lade Touren...
+        </div>
+        <button class="filter-trigger-btn" id="openFiltersBtn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+          </svg>
+          Filtern
+        </button>
+      </div>
+    </div>
+
+    <!-- Tours Feed -->
+    <section class="tours-section">
+      <div class="results-info" id="resultsCount">0 Touren gefunden</div>
+      
+      <!-- Grid Grid Layout -->
+      <div class="tours-grid" id="toursGrid">
+        <!-- Tour cards injected via JS -->
+      </div>
+      
+      <!-- Empty State -->
+      <div class="empty-state" id="emptyState" style="display: none;">
+        <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+        <h3>Keine Touren gefunden</h3>
+        <p>Probiere deine Filtereinstellungen zu lockern oder einen anderen Suchbegriff zu verwenden.</p>
+        <button class="reset-filters-btn" id="resetFiltersBtn">Filter zurücksetzen</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Filter Bottom Sheet Drawer -->
+  <div class="filter-drawer-overlay" id="filterDrawerOverlay"></div>
+  <div class="filter-drawer" id="filterDrawer">
+    <div class="drawer-header">
+      <div class="drawer-handle"></div>
+      <div class="drawer-title-row">
+        <h2>Erweiterte Filter</h2>
+        <button class="close-drawer-btn" id="closeFiltersBtn">&times;</button>
+      </div>
+    </div>
+    
+    <div class="drawer-body">
+      <!-- Length Filter -->
+      <div class="filter-group">
+        <div class="filter-label-row">
+          <span>Länge</span>
+          <span class="filter-value" id="lengthVal">Alle</span>
+        </div>
+        <div class="range-slider-container">
+          <input type="range" id="lengthSlider" min="0" max="100" value="100" step="1">
+          <div class="range-labels">
+            <span>0 km</span>
+            <span>50 km</span>
+            <span>100+ km</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Duration Filter -->
+      <div class="filter-group">
+        <div class="filter-label-row">
+          <span>Dauer</span>
+          <span class="filter-value" id="durationVal">Alle</span>
+        </div>
+        <div class="range-slider-container">
+          <input type="range" id="durationSlider" min="0" max="720" value="720" step="15">
+          <div class="range-labels">
+            <span>0 Std.</span>
+            <span>6 Std.</span>
+            <span>12+ Std.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Difficulty Filter -->
+      <div class="filter-group">
+        <span class="filter-group-title">Schwierigkeit</span>
+        <div class="difficulty-options">
+          <label class="diff-btn diff-easy">
+            <input type="checkbox" id="diffEasy" checked>
+            <span class="diff-badge green"></span>
+            Leicht
+          </label>
+          <label class="diff-btn diff-medium">
+            <input type="checkbox" id="diffMedium" checked>
+            <span class="diff-badge blue"></span>
+            Mittel
+          </label>
+          <label class="diff-btn diff-hard">
+            <input type="checkbox" id="diffHard" checked>
+            <span class="diff-badge red"></span>
+            Schwer
+          </label>
+        </div>
+      </div>
+      
+      <!-- Sorting Panel -->
+      <div class="filter-group">
+        <span class="filter-group-title">Sortierung</span>
+        <div class="sort-options">
+          <select id="sortSelect">
+            <option value="default">Standard</option>
+            <option value="lengthAsc">Länge: kurz zu lang</option>
+            <option value="lengthDesc">Länge: lang zu kurz</option>
+            <option value="durationAsc">Dauer: kurz zu lang</option>
+            <option value="ascentDesc">Höhenmeter: absteigend</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <button class="apply-filters-btn" id="applyFiltersBtn">Ergebnisse anzeigen</button>
+    </div>
+  </div>
+
+  <!-- Help Modal (Sigma Sync Instruction) -->
+  <div class="modal-overlay" id="helpModalOverlay"></div>
+  <div class="modal" id="helpModal">
+    <div class="modal-header">
+      <h2>Sigma Rox 4.0 GPX-Übertragung</h2>
+      <button class="close-modal-btn" id="closeHelpBtn">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-text">
+            <strong>Tour finden & Downloaden:</strong><br>
+            Wähle eine Tour in der App aus und tippe auf <strong>GPX Herunterladen</strong>. Die Datei wird in Safari auf deinem iPhone gespeichert.
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-text">
+            <strong>Datei öffnen:</strong><br>
+            Tippe in Safari auf das Download-Symbol (Blauer Pfeil) unten links in der Adressleiste, wähle die heruntergeladene GPX-Datei aus.
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-text">
+            <strong>In Sigma Ride App importieren:</strong><br>
+            Tippe auf das <strong>Teilen/Senden-Symbol</strong> (Quadrat mit Pfeil nach oben) und wähle die <strong>SIGMA RIDE</strong> App aus der Liste aus.
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-text">
+            <strong>Synchronisieren:</strong><br>
+            Die Sigma Ride App importiert den Track automatisch als Route. Schalte deinen <strong>Sigma Rox 4.0</strong> ein – er synchronisiert sich via Bluetooth und lädt den Track auf dein Gerät.
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal-pwa-tip">
+        <strong>💡 Tipp für Saalbach:</strong><br>
+        Tippe in Safari unten auf das <strong>Teilen-Symbol</strong> und wähle <strong>„Zum Home-Bildschirm hinzufügen“</strong>. Dadurch läuft die App wie eine echte App auf deinem iPhone und funktioniert dank Offline-Speicher auch mitten in den Bergen!
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="close-modal-footer-btn" id="closeHelpFooterBtn">Alles klar!</button>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

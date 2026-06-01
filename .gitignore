@@ -1,0 +1,4 @@
+.DS_Store
+.tilecache/
+tours_db.backup.json
+*.log
