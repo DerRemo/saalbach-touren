@@ -445,7 +445,7 @@ function renderTours() {
     // Quartier-based extras (only when the tour has a start coordinate)
     const distStr = Quartier.formatDistance(tour);
     const distHtml = distStr
-      ? `<div class="tour-distance" title="Luftlinie vom Quartier">${Quartier.isNear(tour) ? '<span class="near-tag">🏠 ab Quartier</span> · ' : ''}📍 ${distStr} Luftlinie</div>`
+      ? `<div class="tour-distance" title="Luftlinie zum nächstgelegenen Punkt der Tour">${Quartier.isNear(tour) ? '<span class="near-tag">🏠 ab Quartier</span> · ' : ''}📍 ${distStr} zur Tour</div>`
       : '';
     const rUrl = Quartier.routeUrl(tour);
     const routeHtml = rUrl
