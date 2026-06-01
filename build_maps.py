@@ -29,6 +29,7 @@ ROUTE = (227, 38, 54)      # red
 CASING = (255, 255, 255)   # white halo under the route
 START = (34, 197, 94)      # green start dot
 END = (239, 68, 68)        # red end dot
+OW, OH = 900, 600          # overview map logical size (wide valley view)
 
 os.makedirs(MAPS_DIR, exist_ok=True)
 os.makedirs(TILE_CACHE, exist_ok=True)
@@ -137,6 +138,53 @@ def render(tour_id, pts):
     return path
 
 
+def render_overview(starts):
+    """Render one valley overview of all start points and emit the fixed
+    Web-Mercator params to maps/overview.json so the frontend can place the
+    draggable Quartier pin and clickable start dots over the static image.
+    `starts` is a list of (lon, lat). Dots/pin are drawn client-side, not here."""
+    lons = [p[0] for p in starts]
+    lats = [p[1] for p in starts]
+    min_lon, max_lon = min(lons), max(lons)
+    min_lat, max_lat = min(lats), max(lats)
+
+    # pick a zoom so the whole bbox fits OW x OH (logical) with breathing room
+    avail_w = OW * (1 - 2 * PAD)
+    avail_h = OH * (1 - 2 * PAD)
+    z = 9
+    for cand in range(16, 8, -1):
+        x0, y0 = lonlat_to_px(min_lon, max_lat, cand)
+        x1, y1 = lonlat_to_px(max_lon, min_lat, cand)
+        if (x1 - x0) <= avail_w and (y1 - y0) <= avail_h:
+            z = cand
+            break
+
+    cx, cy = lonlat_to_px((min_lon + max_lon) / 2, (min_lat + max_lat) / 2, z)
+    origin_x = cx - OW / 2     # @1x global px = top-left of the logical canvas
+    origin_y = cy - OH / 2
+
+    ts = TILE * SCALE
+    out_w, out_h = OW * SCALE, OH * SCALE
+    ox2, oy2 = origin_x * SCALE, origin_y * SCALE   # @2x for tile compositing
+    canvas = Image.new("RGBA", (out_w, out_h), (255, 255, 255, 255))
+    tx0 = int(ox2 // ts); ty0 = int(oy2 // ts)
+    tx1 = int((ox2 + out_w) // ts); ty1 = int((oy2 + out_h) // ts)
+    maxt = 2 ** z
+    for tx in range(tx0, tx1 + 1):
+        for ty in range(ty0, ty1 + 1):
+            if not (0 <= ty < maxt):
+                continue
+            tile = get_tile(z, tx % maxt, ty)
+            canvas.alpha_composite(tile, (int(tx * ts - ox2), int(ty * ts - oy2)))
+
+    out = canvas.convert("RGB").resize((OW, OH), Image.LANCZOS)
+    out.save(os.path.join(MAPS_DIR, "overview.webp"), "WEBP", quality=82, method=6)
+
+    meta = {"z": z, "originX": origin_x, "originY": origin_y, "w": OW, "h": OH}
+    json.dump(meta, open(os.path.join(MAPS_DIR, "overview.json"), "w"), indent=2)
+    print(f"overview written (z={z}, originX={origin_x:.1f}, originY={origin_y:.1f}, {len(starts)} starts)")
+
+
 def main():
     db = json.load(open(DB_PATH, encoding="utf-8"))
     by_id = {t["id"]: t for t in db}
@@ -148,6 +196,7 @@ def main():
     print(f"processing {len(targets)} tours")
 
     done = 0
+    all_starts = []
     for t in targets:
         tid = t["id"]
         try:
@@ -157,6 +206,9 @@ def main():
             if len(pts) >= 2:
                 render(tid, pts)
                 t["images"] = [f"./maps/{tid}.webp"]
+                t["start_lng"] = round(pts[0][0], 6)
+                t["start_lat"] = round(pts[0][1], 6)
+                all_starts.append((pts[0][0], pts[0][1]))
                 tag = f"map({len(pts)}pts)"
             else:
                 tag = "NO-GEOM"
@@ -166,6 +218,8 @@ def main():
             print(f"[ERR] {tid}: {e}")
         time.sleep(0.1)
 
+    if all_starts:
+        render_overview(all_starts)
     json.dump(db, open(DB_PATH, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     print("tours_db.json updated")
 
