@@ -2,3 +2,4 @@
 .tilecache/
 tours_db.backup.json
 *.log
+app-icon-out/

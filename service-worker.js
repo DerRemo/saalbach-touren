@@ -4,7 +4,7 @@
 // fallback. Route-map images never change, so they are precached and served
 // cache-first for speed and full offline availability.
 
-const CACHE_NAME = "saalbach-tours-v8";
+const CACHE_NAME = "saalbach-tours-v9";
 
 const APP_SHELL_ASSETS = [
   "./",
@@ -23,8 +23,8 @@ const STATIC_ASSETS = [
   "./fonts/QGYvz_MVcBeNP4NJuktqUYLkn8BJ.woff2",
   "./fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
   "./fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2",
-  "./icons/bicycle-192.png",
-  "./icons/bicycle-512.png"
+  "./icons/icon-192.png",
+  "./icons/icon-512.png"
 ];
 
 const MAP_ASSETS = [
