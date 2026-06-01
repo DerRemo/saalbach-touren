@@ -185,6 +185,19 @@ def render_overview(starts):
     print(f"overview written (z={z}, originX={origin_x:.1f}, originY={origin_y:.1f}, {len(starts)} starts)")
 
 
+def coarse_track(pts, target=80):
+    """Downsample a (lon, lat) point list to at most `target` points for
+    client-side nearest-point lookup. Always keeps the first and last point.
+    Returns [[lon, lat], ...] rounded to 5 decimals."""
+    n = len(pts)
+    if n <= target:
+        idxs = list(range(n))
+    else:
+        step = (n - 1) / (target - 1)
+        idxs = sorted({int(round(i * step)) for i in range(target)} | {0, n - 1})
+    return [[round(pts[i][0], 5), round(pts[i][1], 5)] for i in idxs]
+
+
 def main():
     db = json.load(open(DB_PATH, encoding="utf-8"))
     by_id = {t["id"]: t for t in db}
@@ -208,6 +221,7 @@ def main():
                 t["images"] = [f"./maps/{tid}.webp"]
                 t["start_lng"] = round(pts[0][0], 6)
                 t["start_lat"] = round(pts[0][1], 6)
+                t["track"] = coarse_track(pts)
                 all_starts.append((pts[0][0], pts[0][1]))
                 tag = f"map({len(pts)}pts)"
             else:
