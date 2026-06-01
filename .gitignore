@@ -1,5 +1,6 @@
 .DS_Store
 .tilecache/
+__pycache__/
 tours_db.backup.json
 *.log
 app-icon-out/
