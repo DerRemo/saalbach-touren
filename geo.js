@@ -49,6 +49,23 @@ function parseLatLng(text) {
   return null;
 }
 
+// Nearest point on a coarse track to a given location.
+// `track` is [[lon, lat], ...]; returns {lat, lng, km} of the closest point,
+// or null if the track is missing/empty.
+function nearestTrackPoint(lat, lng, track) {
+  if (!Array.isArray(track) || track.length === 0) return null;
+  let best = null;
+  for (const p of track) {
+    if (!Array.isArray(p) || p.length < 2) continue;
+    const plng = p[0];
+    const plat = p[1];
+    if (!Number.isFinite(plat) || !Number.isFinite(plng)) continue;
+    const km = haversineKm(lat, lng, plat, plng);
+    if (best === null || km < best.km) best = { lat: plat, lng: plng, km };
+  }
+  return best;
+}
+
 // Web-Mercator projection bound to fixed overview parameters.
 // meta = { z, originX, originY, w, h } in @1x logical pixels (from overview.json).
 // Returns { toXY(lng,lat) -> {x,y}, toLngLat(x,y) -> {lng,lat} } in the
@@ -77,5 +94,5 @@ function makeProjection(meta) {
 
 // Dual export: browser globals (module undefined → skipped) + Node tests.
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { haversineKm, formatKm, validLatLng, parseLatLng, makeProjection };
+  module.exports = { haversineKm, formatKm, validLatLng, parseLatLng, makeProjection, nearestTrackPoint };
 }

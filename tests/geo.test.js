@@ -1,5 +1,5 @@
 const assert = require("assert");
-const { haversineKm, formatKm, parseLatLng, makeProjection } = require("../geo.js");
+const { haversineKm, formatKm, parseLatLng, makeProjection, nearestTrackPoint } = require("../geo.js");
 
 function near(a, b, tol, msg) {
   assert.ok(Math.abs(a - b) <= tol, `${msg}: ${a} not within ${tol} of ${b}`);
@@ -39,5 +39,18 @@ const xy = proj.toXY(12.5966667, 47.3663889);
 const ll = proj.toLngLat(xy.x, xy.y);
 near(ll.lng, 12.5966667, 1e-6, "proj round-trip lng");
 near(ll.lat, 47.3663889, 1e-6, "proj round-trip lat");
+
+// nearestTrackPoint — track is [[lon,lat], ...]
+const track = [[12.0, 47.0], [12.5966667, 47.3663889], [13.0, 48.0]];
+let np = nearestTrackPoint(47.3663889, 12.5966667, track);
+assert.ok(np, "nearest point found");
+near(np.km, 0, 1e-6, "exact match → 0 km");
+near(np.lat, 47.3663889, 1e-9, "nearest lat");
+near(np.lng, 12.5966667, 1e-9, "nearest lng");
+np = nearestTrackPoint(47.01, 12.01, track);
+near(np.lat, 47.0, 1e-9, "picks the closest (first) point");
+near(np.lng, 12.0, 1e-9, "picks the closest (first) point lng");
+assert.strictEqual(nearestTrackPoint(47, 12, []), null, "empty track → null");
+assert.strictEqual(nearestTrackPoint(47, 12, undefined), null, "missing track → null");
 
 console.log("geo.test.js: all assertions passed");
