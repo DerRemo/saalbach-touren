@@ -109,11 +109,13 @@
     "technique": 0,
     "condition": 4,
     "short_description": "Schöne naturbelassene Touren- / Enduro-Strecke, eingebettet in einer außergewöhnlichen Bergkulisse.\r\n<p> </p>\r\n<p><b>Dieser Trail ist unbeaufsichtigt und wird nicht permanent gewartet. Die Befahrung erfolgt auf eigene Gefahr. Entlang der Strecke gibt es keine besondere Gefahrensicherung. Aus diesem Grund erfolgt keine offizielle Angabe, ob der Trail geöffnet oder geschlossen ist. Auf sämtlichen durch den Tourismusverband und die Bergbahnen ausgewiesenen Mountainbike-Strecken gilt die Straßenverkehrsordnung (StVO)!</b></p>",
-    "starting_point": "ehem. Spieleck Schlepplift Bergstation",
+    "starting_point": "former Spieleck T-bar lift mountain station",
     "images": [
       "./maps/7851373.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=7851373&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=7851373&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.535454,
+    "start_lat": 47.392764
   },
   {
     "id": "1509908",
@@ -187,11 +189,13 @@
     "technique": 1,
     "condition": 2,
     "short_description": "Eine E-Bike Tour nach Tirol mit lässigen Trails.",
-    "starting_point": "Saalbach Zentrum",
+    "starting_point": "Saalbach Center",
     "images": [
       "./maps/36702247.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=36702247&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=36702247&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.636323,
+    "start_lat": 47.391385
   },
   {
     "id": "60212625",
@@ -227,11 +231,13 @@
     "technique": 2,
     "condition": 2,
     "short_description": "Eine entspannte Runde für den E-Freerider. Die Betriebszeiten der Bergbahnen sind bitte zu beachten, da die X-Line außerhalb dieser Zeiten gesperrt ist.",
-    "starting_point": "Saalbach Zentrum",
+    "starting_point": "Saalbach center",
     "images": [
       "./maps/36923450.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=36923450&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=36923450&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.635981,
+    "start_lat": 47.390937
   },
   {
     "id": "67066617",
@@ -328,7 +334,9 @@
     "images": [
       "./maps/66420734.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=66420734&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=66420734&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.848418,
+    "start_lat": 47.426886
   },
   {
     "id": "803214053",
@@ -349,7 +357,9 @@
     "images": [
       "./maps/803214053.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=803214053&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=803214053&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.636996,
+    "start_lat": 47.391514
   },
   {
     "id": "9787014",
@@ -366,11 +376,13 @@
     "technique": 0,
     "condition": 2,
     "short_description": "<p>Leichter Singletrail mit leichten Tables, Anliegern, Sprüngen etc., die auch mit niedrigemTempo befahren werden können.</p>",
-    "starting_point": "Kohlmaisbahn Bergstation",
+    "starting_point": "Kohlmaisbahn valley station",
     "images": [
       "./maps/9787014.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=9787014&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=9787014&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.653622,
+    "start_lat": 47.409957
   },
   {
     "id": "1534981",
@@ -387,11 +399,13 @@
     "technique": 0,
     "condition": 6,
     "short_description": "<p>Mit knapp 1.000 Höhenmetern eine knackige Tour zur Bergstation der Zwölferkogelbahn.</p>",
-    "starting_point": "Zentrum Hinterglemm",
+    "starting_point": "Center Hinterglemm",
     "images": [
       "./maps/1534981.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1534981&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1534981&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.596802,
+    "start_lat": 47.378694
   },
   {
     "id": "1550348",
@@ -408,11 +422,13 @@
     "technique": 0,
     "condition": 5,
     "short_description": "Anspruchsvoller Singletrail über Wiesen-, Stein- & Waldböden mit vielen Sprüngen, Anliegern und kniffligen Wurzel- & Technikpassagen. Hoher Spaßfaktor für versierte Biker, aber auch viele Varianten für Pros.",
-    "starting_point": "Schattberg X-press Bergstation",
+    "starting_point": "Schattberg X-press mountain station",
     "images": [
       "./maps/1550348.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1550348&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1550348&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.636788,
+    "start_lat": 47.367568
   },
   {
     "id": "54233381",
@@ -562,11 +578,13 @@
     "technique": 0,
     "condition": 4,
     "short_description": "<p>So flowig wie die Panorama-Line, aber mit ein wenig mehr Airtime und optisch so romantisch wie im Feenland.</p>",
-    "starting_point": "Talstation Schattberg Sprinter",
+    "starting_point": "Schattberg Sprinter bottom station",
     "images": [
       "./maps/800002949.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=800002949&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=800002949&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.63621,
+    "start_lat": 47.37328
   },
   {
     "id": "1496890",
@@ -659,11 +677,13 @@
     "technique": 0,
     "condition": 2,
     "short_description": "<p>Einfacher und breiter Trail mit großzügigen Kurven, flachen Holzelementen, kleinen Wellen, Anliegern sowie Tables, die erste Sprünge mit dem Mountainbike zulassen. Ideal für Freeride-Neulinge.</p>",
-    "starting_point": "Kohlmaisbahn Mittelstation",
+    "starting_point": "Kohlmaisbahn middle station",
     "images": [
       "./maps/9801383.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=9801383&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=9801383&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.646702,
+    "start_lat": 47.401087
   },
   {
     "id": "808001055",
@@ -741,7 +761,9 @@
     "images": [
       "./maps/60210849.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=60210849&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=60210849&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.635277,
+    "start_lat": 47.390329
   },
   {
     "id": "54482967",
@@ -758,11 +780,13 @@
     "technique": 0,
     "condition": 5,
     "short_description": "<p>Ein Runde mit knackigen Anstiegen und mit belohnenden Aussichten. Zahlreiche Radweg-Kombinationen machen diese Rennrad Tour aber auch für den Graveller zur Entdeckungstour.</p>",
-    "starting_point": "Saalbach Zentrum",
+    "starting_point": "Saalbach center",
     "images": [
       "./maps/54482967.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=54482967&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=54482967&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.637302,
+    "start_lat": 47.391844
   },
   {
     "id": "29850623",
@@ -798,11 +822,13 @@
     "technique": 0,
     "condition": 4,
     "short_description": "Sehr abwechslungsreiche Strecke inmitten einer herrlichen Bergkulisse. Eignet sich auch für geübte Tourenfahrer, die den Berg aus eigener Kraft bezwungen haben. Die Strecke ist teils schnell, dabei aber immer gut zu kontrollieren.",
-    "starting_point": "12er KOGEL Mittelstation",
+    "starting_point": "12er KOGEL middle station",
     "images": [
       "./maps/7851080.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=7851080&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=7851080&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.58175,
+    "start_lat": 47.363604
   },
   {
     "id": "52825190",
@@ -819,11 +845,13 @@
     "technique": 0,
     "condition": 4,
     "short_description": "<p>Small Gravel-Devil ist der kleine Bruder vom “Original” und eine schöne Gravel Runde mit satten Anstiegen und lässigen Selfie-Spots.</p>",
-    "starting_point": "Saalbach Zentrum",
+    "starting_point": "Saalbach center",
     "images": [
       "./maps/52825190.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=52825190&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=52825190&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.635951,
+    "start_lat": 47.39088
   },
   {
     "id": "810804243",
@@ -844,7 +872,9 @@
     "images": [
       "./maps/810804243.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=810804243&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=810804243&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.633155,
+    "start_lat": 47.375648
   },
   {
     "id": "62042866",
@@ -865,7 +895,9 @@
     "images": [
       "./maps/62042866.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=62042866&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=62042866&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.637871,
+    "start_lat": 47.389199
   },
   {
     "id": "1562199",
@@ -924,7 +956,9 @@
     "images": [
       "./maps/810804249.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=810804249&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=810804249&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.691383,
+    "start_lat": 47.401165
   },
   {
     "id": "810804255",
@@ -945,7 +979,9 @@
     "images": [
       "./maps/810804255.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=810804255&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=810804255&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.685878,
+    "start_lat": 47.400733
   },
   {
     "id": "810804253",
@@ -966,7 +1002,9 @@
     "images": [
       "./maps/810804253.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=810804253&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=810804253&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.63094,
+    "start_lat": 47.380133
   },
   {
     "id": "9890525",
@@ -983,11 +1021,13 @@
     "technique": 0,
     "condition": 4,
     "short_description": "<p>Naturbelassener und sehr wurzeliger Singletrail knapp unterhalb des Bergkammes, der in beide Richtungen befahren werden kann.</p>\r\n\r\n<p><strong>Dieser Trail ist unbeaufsichtigt und wird nicht permanent gewartet. Die Befahrung erfolgt auf eigene Gefahr. Entlang der Strecke gibt es keine besondere Gefahrensicherung. Aus diesem Grund erfolgt keine offizielle Angabe, ob der Trail geöffnet oder geschlossen ist. Auf sämtlichen durch den Tourismusverband und die Bergbahnen ausgewiesenen Mountainbike-Strecken gilt die Straßenverkehrsordnung (StVO)!</strong></p>",
-    "starting_point": "Panorama 6er Sesselbahn (Bergstation)",
+    "starting_point": "Panorama 6-seater chairlift (mountain station)",
     "images": [
       "./maps/9890525.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=9890525&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=9890525&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.655925,
+    "start_lat": 47.40965
   },
   {
     "id": "800954872",
@@ -1008,7 +1048,9 @@
     "images": [
       "./maps/800954872.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=800954872&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=800954872&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.63325,
+    "start_lat": 47.390561
   },
   {
     "id": "1512536",
@@ -1044,11 +1086,13 @@
     "technique": 2,
     "condition": 3,
     "short_description": "Bei dieser Tour steht die Natur und tolle Ausblicke an der Tagesordnung. Mit der urigen Tödlingalm wartet ein richtiges Unikat unter den bewirtschaften Almen auf die E-Biker.",
-    "starting_point": "Saalbach Zentrum",
+    "starting_point": "Saalbach center",
     "images": [
       "./maps/36702584.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=36702584&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=36702584&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.636175,
+    "start_lat": 47.391299
   },
   {
     "id": "1523794",
@@ -1107,7 +1151,9 @@
     "images": [
       "./maps/804652214.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=804652214&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=804652214&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.636345,
+    "start_lat": 47.391555
   },
   {
     "id": "1488965",
@@ -1143,11 +1189,13 @@
     "technique": 0,
     "condition": 4,
     "short_description": "<p>Diese lässige Tour führt entlang malerischer Radwege mit einem abschließenden schweren Gravel-Uphill zum Spielberghaus, bevor es wieder zurück ins Zentrum von Saalbach geht!</p>",
-    "starting_point": "Saalbach Zentrum",
+    "starting_point": "Saalbach Center",
     "images": [
       "./maps/45618165.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=45618165&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=45618165&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.634276,
+    "start_lat": 47.389877
   },
   {
     "id": "18397768",
@@ -1183,11 +1231,13 @@
     "technique": 0,
     "condition": 3,
     "short_description": "<p>NEU: seit Sommer 2023 verbindet die Sheepy Hollow-Line den Westgipfel mit dem Schattberg in Saalbach Hinterglemm.</p>",
-    "starting_point": "Bergstation Schattberg Sprinter",
+    "starting_point": "Mountain station Schattberg Sprinter",
     "images": [
       "./maps/802401162.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=802401162&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=802401162&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.623169,
+    "start_lat": 47.364696
   },
   {
     "id": "56647220",
@@ -1261,11 +1311,13 @@
     "technique": 0,
     "condition": 2,
     "short_description": "<p>Entspannte Tour bis zum malerischen Talschluss mit kurzem Trailstück</p>",
-    "starting_point": "Zentrum Hinterglemm",
+    "starting_point": "Centre of Hinterglemm",
     "images": [
       "./maps/1497398.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1497398&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1497398&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.596823,
+    "start_lat": 47.378705
   },
   {
     "id": "63530911",
@@ -1282,11 +1334,13 @@
     "technique": 0,
     "condition": 5,
     "short_description": "<p><strong>Gravel King</strong> ist eine imposante mixed Terrain Gravel Tour mitten in der heimischen und grenznahen bayerischen Bergwelt. Eine unvergesslich schöne und sehr fordernde Runde!</p>",
-    "starting_point": "Saalbach Zentrum",
+    "starting_point": "Saalbach Center",
     "images": [
       "./maps/63530911.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=63530911&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=63530911&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.636387,
+    "start_lat": 47.391371
   },
   {
     "id": "52492667",
@@ -1307,7 +1361,9 @@
     "images": [
       "./maps/52492667.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=52492667&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=52492667&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.635276,
+    "start_lat": 47.389356
   },
   {
     "id": "1524597",
@@ -1343,11 +1399,13 @@
     "technique": 2,
     "condition": 3,
     "short_description": "Eine lässige Tour mit dem legendären Hacklberg Trail und einer Auffahrt mit der Westgipfelbahn.",
-    "starting_point": "Zentrum Hinterglemm",
+    "starting_point": "Center of Hinterglemm",
     "images": [
       "./maps/36922983.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=36922983&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=36922983&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.597645,
+    "start_lat": 47.378992
   },
   {
     "id": "6234167",
@@ -1364,11 +1422,13 @@
     "technique": 0,
     "condition": 5,
     "short_description": "Ein Hochgebirgstrail vom Feinsten mit einigen schnellen Passagen, die aber immer wieder von knackigen Schlüsselstellen im verblockten und verwurzelten Gelände unterbrochen werden. Panorama und Trail-Erlebnisse sind kaum zu toppen.",
-    "starting_point": "Westgipfelbahn Bergstation",
+    "starting_point": "Westgipfelbahn mountain station",
     "images": [
       "./maps/6234167.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=6234167&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=6234167&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.6196,
+    "start_lat": 47.361967
   },
   {
     "id": "7827971",
@@ -1389,7 +1449,9 @@
     "images": [
       "./maps/7827971.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=7827971&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=7827971&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.596828,
+    "start_lat": 47.378719
   },
   {
     "id": "1509474",
@@ -1486,7 +1548,9 @@
     "images": [
       "./maps/803284359.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=803284359&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=803284359&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.636273,
+    "start_lat": 47.391323
   },
   {
     "id": "17802339",
@@ -1526,7 +1590,9 @@
     "images": [
       "./maps/34026610.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=34026610&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=34026610&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.596836,
+    "start_lat": 47.378696
   },
   {
     "id": "58572554",
@@ -1604,7 +1670,9 @@
     "images": [
       "./maps/44826573.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=44826573&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=44826573&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.640195,
+    "start_lat": 47.392004
   },
   {
     "id": "18398561",
@@ -1644,7 +1712,9 @@
     "images": [
       "./maps/9801710.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=9801710&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=9801710&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.61982,
+    "start_lat": 47.416419
   },
   {
     "id": "1503597",
@@ -1779,7 +1849,9 @@
     "images": [
       "./maps/1539231.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1539231&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1539231&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.596807,
+    "start_lat": 47.378701
   },
   {
     "id": "1528213",
@@ -1914,7 +1986,9 @@
     "images": [
       "./maps/803199570.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=803199570&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=803199570&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.597935,
+    "start_lat": 47.37878
   },
   {
     "id": "1551238",
@@ -1969,11 +2043,13 @@
     "technique": 0,
     "condition": 3,
     "short_description": "Ein wunderbare Tour ohne Trails und herrlichen Aussichten.",
-    "starting_point": "Saalbach Zentrum",
+    "starting_point": "Saalbach center",
     "images": [
       "./maps/36951462.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=36951462&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=36951462&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.636093,
+    "start_lat": 47.391146
   },
   {
     "id": "1519240",
@@ -1990,11 +2066,13 @@
     "technique": 0,
     "condition": 4,
     "short_description": "<p>Anspruchsvolle, landschaftlich großartige Runde zwischen Saalbach und Fieberbrunn.</p>",
-    "starting_point": "Zentrum Saalbach",
+    "starting_point": "Saalbach center",
     "images": [
       "./maps/1519240.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1519240&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1519240&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.634975,
+    "start_lat": 47.390418
   },
   {
     "id": "1520266",
@@ -2049,11 +2127,13 @@
     "technique": 0,
     "condition": 5,
     "short_description": "<p>Die Steinberg-Runde ist eine regionale Legende unter den Rennrad- und natürlich Graveltouren. Die Tour ist mit breiten Gravel-Schlappen genauso cool wie mit den schmalen Reifen!</p>",
-    "starting_point": "Saalbach Zentrum",
+    "starting_point": "Saalbach center",
     "images": [
       "./maps/54477732.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=54477732&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=54477732&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.635908,
+    "start_lat": 47.390858
   },
   {
     "id": "1508235",
@@ -2070,11 +2150,13 @@
     "technique": 0,
     "condition": 4,
     "short_description": "<p>Klassische Uphill-Runde in die Almenregion östlich von Saalbach.</p>",
-    "starting_point": "Schattberg X-press Talstation",
+    "starting_point": "Schattberg X-press valley station",
     "images": [
       "./maps/1508235.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1508235&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1508235&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.63498,
+    "start_lat": 47.390425
   },
   {
     "id": "809250987",
@@ -2110,11 +2192,13 @@
     "technique": 1,
     "condition": 3,
     "short_description": "Eine aussichtsreiche Tour mit lässigen Uphills und Trails in atemberaubender Landschaft.",
-    "starting_point": "Saalbach Zentrum",
+    "starting_point": "Saalbach center",
     "images": [
       "./maps/37104791.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=37104791&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=37104791&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.634627,
+    "start_lat": 47.389678
   },
   {
     "id": "1545397",
@@ -2131,11 +2215,13 @@
     "technique": 0,
     "condition": 3,
     "short_description": "<p>Schöne Trainingsrunde mit Einkehrmöglichkeit auf der Panorama Alm oder am Spielberghaus.</p>",
-    "starting_point": "Schattberg X-Press Talstation",
+    "starting_point": "Schattberg X-Press valley station",
     "images": [
       "./maps/1545397.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1545397&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1545397&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.634975,
+    "start_lat": 47.390425
   },
   {
     "id": "41819094",
@@ -2289,7 +2375,9 @@
     "images": [
       "./maps/9802279.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=9802279&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=9802279&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.593603,
+    "start_lat": 47.342601
   },
   {
     "id": "1556134",
@@ -2401,11 +2489,13 @@
     "technique": 0,
     "condition": 1,
     "short_description": "<p>Die neue Thurner-Line am Kohlmais erwartet euch mit einem lässigen und abwechslungsreichen Mix aus Kurven und Features für fortgeschrittene Mountainbiker.</p>",
-    "starting_point": "Abzweigung am Wurzel-Trail",
+    "starting_point": "Junction at the root trail",
     "images": [
       "./maps/806658978.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=806658978&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=806658978&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.671674,
+    "start_lat": 47.403111
   },
   {
     "id": "1562026",
@@ -2479,11 +2569,13 @@
     "technique": 0,
     "condition": 3,
     "short_description": "<p>Schön angelegter Trail, der richtig Würze in jede MTB-Tour am Reiterkogel bringt. Ideal für Enduro- und Tourenfahrer.</p>\r\n\r\n<p><strong>Achtung: Es handelt sich um einen SHARED TRAIL - dieser wird auch von Wanderern genutzt. Bitte um Anpassung der Fahrweise, Fahren auf Sicht und ein respektvolles Miteinander!</strong></p>\r\n\r\n<p><strong>Dieser Trail ist unbeaufsichtigt und wird nicht permanent gewartet. Die Befahrung erfolgt auf eigene Gefahr. Entlang der Strecke gibt es keine besondere Gefahrensicherung. Aus diesem Grund erfolgt keine offizielle Angabe, ob der Trail geöffnet oder geschlossen ist. Auf sämtlichen durch den Tourismusverband und die Bergbahnen ausgewiesenen Mountainbike-Strecken gilt die Straßenverkehrsordnung (StVO)!</strong></p>",
-    "starting_point": "Wetterkreuz Speicherteich",
+    "starting_point": "Wetterkreuz Reservoir Pond",
     "images": [
       "./maps/7851464.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=7851464&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=7851464&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.596082,
+    "start_lat": 47.406101
   },
   {
     "id": "1520343",
@@ -2542,7 +2634,9 @@
     "images": [
       "./maps/13900648.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=13900648&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=13900648&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.696951,
+    "start_lat": 47.403134
   },
   {
     "id": "1499562",
@@ -2597,11 +2691,13 @@
     "technique": 2,
     "condition": 6,
     "short_description": "Eine ausdauernde E-Bike Runde mit zahlreichen Einkehrmöglichkeiten, Ladestationen und spaßigen Trails.",
-    "starting_point": "Saalbach Zentrum",
+    "starting_point": "Centre of Saalbach",
     "images": [
       "./maps/36701838.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=36701838&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=36701838&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.634888,
+    "start_lat": 47.389546
   },
   {
     "id": "1509842",
@@ -2675,11 +2771,13 @@
     "technique": 0,
     "condition": 1,
     "short_description": "<p>Die neue 12er Sky-Line am Zwölferkogel bietet sowohl Beginnern als auch Fortgeschrittenen Mountainbikern ein abwechslunsreiches Terrain und atemberaubende Ausblick über das Glemmtal.</p>",
-    "starting_point": "12er KOGEL Bergstation",
+    "starting_point": "12er KOGEL top station",
     "images": [
       "./maps/806658770.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=806658770&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=806658770&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.569022,
+    "start_lat": 47.360746
   },
   {
     "id": "18087125",
@@ -2719,7 +2817,9 @@
     "images": [
       "./maps/1540048.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1540048&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1540048&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.596828,
+    "start_lat": 47.378697
   },
   {
     "id": "52320991",
@@ -2736,11 +2836,13 @@
     "technique": 0,
     "condition": 5,
     "short_description": "<p>Eine lässige Feierabend Runde mit schöner Aussicht und gemütlichen Einkehrmöglichkeiten! </p>",
-    "starting_point": "Saalbach Zentrum",
+    "starting_point": "Saalbach Center",
     "images": [
       "./maps/52320991.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=52320991&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=52320991&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.635859,
+    "start_lat": 47.390856
   },
   {
     "id": "1534928",
@@ -2875,7 +2977,9 @@
     "images": [
       "./maps/803256111.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=803256111&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=803256111&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.63479,
+    "start_lat": 47.390677
   },
   {
     "id": "29815561",
@@ -3105,7 +3209,9 @@
     "images": [
       "./maps/54951850.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=54951850&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=54951850&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.808082,
+    "start_lat": 47.360942
   },
   {
     "id": "1487865",
@@ -3126,7 +3232,9 @@
     "images": [
       "./maps/1487865.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1487865&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1487865&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.58928,
+    "start_lat": 47.37641
   },
   {
     "id": "810806199",
@@ -3147,7 +3255,9 @@
     "images": [
       "./maps/810806199.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=810806199&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=810806199&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.640982,
+    "start_lat": 47.389419
   },
   {
     "id": "9802107",
@@ -3164,11 +3274,13 @@
     "technique": 0,
     "condition": 3,
     "short_description": "<p>Naturbelassener und flowiger Panoramatrail in einer atemberaubenden Bergkulisse, den man mit viel Speed & Flow bewältigen kann.</p>",
-    "starting_point": "Schattberg Westgipfel",
+    "starting_point": "Schattberg West Summit",
     "images": [
       "./maps/9802107.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=9802107&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=9802107&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.622617,
+    "start_lat": 47.364664
   },
   {
     "id": "1535206",
@@ -3204,11 +3316,13 @@
     "technique": 0,
     "condition": 6,
     "short_description": "<p>Anspruchsvoll und spektakulär – ein absolutes Highlight.</p>",
-    "starting_point": "Schattberg X-Press Talstation",
+    "starting_point": "Schattberg Sprinter bottom station",
     "images": [
       "./maps/1560037.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1560037&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1560037&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.634964,
+    "start_lat": 47.390422
   },
   {
     "id": "1484258",
@@ -3286,7 +3400,9 @@
     "images": [
       "./maps/802756911.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=802756911&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=802756911&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.636361,
+    "start_lat": 47.391631
   },
   {
     "id": "804640770",
@@ -3307,7 +3423,9 @@
     "images": [
       "./maps/804640770.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=804640770&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=804640770&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.636342,
+    "start_lat": 47.391544
   },
   {
     "id": "52517610",
@@ -3324,11 +3442,13 @@
     "technique": 0,
     "condition": 4,
     "short_description": "<p>Diese 3 Seen Runde führt von Saalbach startend über den Zeller See zum Klammsee am Fuße des Kitzsteinhorns. Danach geht es zum Ritzensee in Saalfelden und wieder nach Saalbach.</p>",
-    "starting_point": "Saalbach Zentrum",
+    "starting_point": "Saalbach center",
     "images": [
       "./maps/52517610.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=52517610&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=52517610&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.638063,
+    "start_lat": 47.389276
   },
   {
     "id": "1534967",
@@ -3345,11 +3465,13 @@
     "technique": 0,
     "condition": 6,
     "short_description": "<p>Ausgiebige und abwechslungsreiche Tagestour für konditionsstarke Biker.</p>",
-    "starting_point": "Zentrum Hinterglemm",
+    "starting_point": "Center Hinterglemm",
     "images": [
       "./maps/1534967.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1534967&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=1534967&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.596834,
+    "start_lat": 47.37869
   },
   {
     "id": "7851182",
@@ -3366,11 +3488,13 @@
     "technique": 0,
     "condition": 1,
     "short_description": "<p>Flowige Line in einer schönen Bergkulisse, für Freerider wie auch CC-Fahrer geeignet.</p>",
-    "starting_point": "Westgipfelbahn Mittelstation",
+    "starting_point": "Westgipfelbahn middle station",
     "images": [
       "./maps/7851182.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=7851182&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=7851182&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.604789,
+    "start_lat": 47.365412
   },
   {
     "id": "1487093",
@@ -3410,7 +3534,9 @@
     "images": [
       "./maps/63832877.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=63832877&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=63832877&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.638918,
+    "start_lat": 47.392039
   },
   {
     "id": "54482142",
@@ -3431,7 +3557,9 @@
     "images": [
       "./maps/54482142.webp"
     ],
-    "gpx_url": "https://api-oa.com/download.tour.gpx?i=54482142&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS"
+    "gpx_url": "https://api-oa.com/download.tour.gpx?i=54482142&project=api-saalbach&key=IMBSMP7G-EMWGKTHO-4OSSYIOS",
+    "start_lng": 12.636362,
+    "start_lat": 47.391643
   },
   {
     "id": "17816277",
