@@ -201,6 +201,7 @@ const Quartier = (() => {
       const ll = proj.toLngLat(clamp(x, meta.w), clamp(y, meta.h));
       setHome({ name: "Eigenes Quartier (Karte)", lat: ll.lat, lng: ll.lng });
     });
+    pin.addEventListener("pointercancel", () => { dragging = false; });
   }
 
   function wireModal() {
