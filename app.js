@@ -363,10 +363,12 @@ function applyFilters() {
     const metric = (t) => (filterState.viewMode === "trails" ? t.descent_m : t.ascent_m);
     filteredTours.sort((a, b) => metric(b) - metric(a));
   } else if (filterState.sortBy === "distanceAsc") {
-    // Nearest start point to the Quartier first; tours without coords go last.
+    // Nearest point of the tour to the Quartier first. Trails (lift-served) and
+    // tours without a track have no meaningful Quartier distance and sort to the end.
+    const dist = (t) => (isSingleTrail(t) ? null : Quartier.distanceKm(t));
     filteredTours.sort((a, b) => {
-      const da = Quartier.distanceKm(a);
-      const db = Quartier.distanceKm(b);
+      const da = dist(a);
+      const db = dist(b);
       if (da === null && db === null) return a.title.localeCompare(b.title);
       if (da === null) return 1;
       if (db === null) return -1;
@@ -442,12 +444,16 @@ function renderTours() {
           <span style="font-size:0.75rem;">Kein Bild vorhanden</span>
         </div>`;
 
-    // Quartier-based extras (only when the tour has a start coordinate)
-    const distStr = Quartier.formatDistance(tour);
-    const distHtml = distStr
-      ? `<div class="tour-distance" title="Luftlinie zum nächstgelegenen Punkt der Tour">${Quartier.isNear(tour) ? '<span class="near-tag">🏠 ab Quartier</span> · ' : ''}📍 ${distStr} zur Tour</div>`
-      : '';
-    const rUrl = Quartier.routeUrl(tour);
+    // Quartier-based extras. Trails are lift-served (you ride the lift up), so a
+    // distance/route to a point on the mountain makes no sense — show a lift tag instead.
+    const isTrail = isSingleTrail(tour);
+    const distStr = isTrail ? null : Quartier.formatDistance(tour);
+    const distHtml = isTrail
+      ? `<div class="tour-distance" title="Bikepark-Line — Auffahrt per Lift">🚡 per Lift</div>`
+      : (distStr
+        ? `<div class="tour-distance" title="Luftlinie zum nächstgelegenen Punkt der Tour">${Quartier.isNear(tour) ? '<span class="near-tag">🏠 ab Quartier</span> · ' : ''}📍 ${distStr} zur Tour</div>`
+        : '');
+    const rUrl = isTrail ? null : Quartier.routeUrl(tour);
     const routeHtml = rUrl
       ? `<a class="route-btn" href="${rUrl}" target="_blank" rel="noopener" aria-label="Route zum Startpunkt">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
