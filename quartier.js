@@ -1,5 +1,5 @@
 // quartier.js — Quartier (home base) state + overview map modal.
-// Depends on geo.js globals: haversineKm, formatKm, parseLatLng, makeProjection.
+// Depends on geo.js globals: haversineKm, formatKm, parseLatLng, makeProjection, nearestTrackPoint.
 // Exposes window.Quartier for app.js (distance badges, route button, sort).
 
 const Quartier = (() => {
