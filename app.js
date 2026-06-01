@@ -91,6 +91,8 @@ async function loadToursData() {
     tours.sort((a, b) => a.title.localeCompare(b.title));
     
     filtersSummaryText.textContent = "Touren geladen";
+    Quartier.init(tours);
+    Quartier.onHomeChange(applyFilters);
     applyFilters();
   } catch (error) {
     console.error("Fehler beim Laden der Tourendaten:", error);
@@ -360,6 +362,16 @@ function applyFilters() {
     // In Trails mode the relevant elevation metric is descent, not ascent.
     const metric = (t) => (filterState.viewMode === "trails" ? t.descent_m : t.ascent_m);
     filteredTours.sort((a, b) => metric(b) - metric(a));
+  } else if (filterState.sortBy === "distanceAsc") {
+    // Nearest start point to the Quartier first; tours without coords go last.
+    filteredTours.sort((a, b) => {
+      const da = Quartier.distanceKm(a);
+      const db = Quartier.distanceKm(b);
+      if (da === null && db === null) return a.title.localeCompare(b.title);
+      if (da === null) return 1;
+      if (db === null) return -1;
+      return da - db;
+    });
   } else {
     // Default sorting: alphabetically by title
     filteredTours.sort((a, b) => a.title.localeCompare(b.title));
@@ -430,6 +442,21 @@ function renderTours() {
           <span style="font-size:0.75rem;">Kein Bild vorhanden</span>
         </div>`;
 
+    // Quartier-based extras (only when the tour has a start coordinate)
+    const distStr = Quartier.formatDistance(tour);
+    const distHtml = distStr
+      ? `<div class="tour-distance" title="Luftlinie vom Quartier">${Quartier.isNear(tour) ? '<span class="near-tag">🏠 ab Quartier</span> · ' : ''}📍 ${distStr} Luftlinie</div>`
+      : '';
+    const rUrl = Quartier.routeUrl(tour);
+    const routeHtml = rUrl
+      ? `<a class="route-btn" href="${rUrl}" target="_blank" rel="noopener" aria-label="Route zum Startpunkt">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+          </svg>
+          Route
+        </a>`
+      : '';
+
     card.innerHTML = `
       <div class="card-media-wrapper">
         ${imageHtml}
@@ -445,6 +472,7 @@ function renderTours() {
           </svg>
           <span class="start-text">${tour.starting_point || 'Startpunkt unbekannt'}</span>
         </div>
+        ${distHtml}
         <div class="tour-stats">
           <div class="stat-item">
             <span class="stat-label">Länge</span>
@@ -468,6 +496,7 @@ function renderTours() {
             </svg>
             GPX Herunterladen
           </button>
+          ${routeHtml}
         </div>
       </div>
     `;
