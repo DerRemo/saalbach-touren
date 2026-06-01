@@ -4,7 +4,7 @@
 // fallback. Route-map images never change, so they are precached and served
 // cache-first for speed and full offline availability.
 
-const CACHE_NAME = "saalbach-tours-v10";
+const CACHE_NAME = "saalbach-tours-v11";
 
 const APP_SHELL_ASSETS = [
   "./",
@@ -13,7 +13,8 @@ const APP_SHELL_ASSETS = [
   "./app.js",
   "./manifest.json",
   "./tours_db.json",
-  "./fonts/fonts.css"
+  "./fonts/fonts.css",
+  "./maps/overview.json"
 ];
 
 // Bundled fonts and icons — local copies so the app works fully offline on
@@ -91,7 +92,8 @@ const MAP_ASSETS = [
   "./maps/9801710.webp",
   "./maps/9802107.webp",
   "./maps/9802279.webp",
-  "./maps/9890525.webp"
+  "./maps/9890525.webp",
+  "./maps/overview.webp"
 ];
 
 const APP_SHELL = /\.(html|css|js|json)$/;
