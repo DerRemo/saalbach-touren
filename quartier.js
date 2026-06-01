@@ -48,10 +48,15 @@ const Quartier = (() => {
 
   function onHomeChange(cb) { listeners.push(cb); }
 
-  // air-line distance from home to a tour's start; null if tour lacks coords
+  // nearest point on this tour's coarse track to the current home (or null)
+  function nearest(tour) {
+    return nearestTrackPoint(home.lat, home.lng, tour.track);
+  }
+
+  // air-line distance from home to the nearest point of the tour; null if no track
   function distanceKm(tour) {
-    if (!Number.isFinite(tour.start_lat) || !Number.isFinite(tour.start_lng)) return null;
-    return haversineKm(home.lat, home.lng, tour.start_lat, tour.start_lng);
+    const np = nearest(tour);
+    return np === null ? null : np.km;
   }
 
   function isNear(tour) {
@@ -65,9 +70,10 @@ const Quartier = (() => {
   }
 
   function routeUrl(tour) {
-    if (!Number.isFinite(tour.start_lat) || !Number.isFinite(tour.start_lng)) return null;
+    const np = nearest(tour);
+    if (np === null) return null;
     const origin = `${home.lat},${home.lng}`;
-    const dest = `${tour.start_lat},${tour.start_lng}`;
+    const dest = `${np.lat},${np.lng}`;
     return `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${dest}`;
   }
 
