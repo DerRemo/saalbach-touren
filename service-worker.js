@@ -4,7 +4,7 @@
 // fallback. Route-map images never change, so they are precached and served
 // cache-first for speed and full offline availability.
 
-const CACHE_NAME = "saalbach-tours-v7";
+const CACHE_NAME = "saalbach-tours-v8";
 
 const APP_SHELL_ASSETS = [
   "./",
@@ -12,7 +12,19 @@ const APP_SHELL_ASSETS = [
   "./style.css",
   "./app.js",
   "./manifest.json",
-  "./tours_db.json"
+  "./tours_db.json",
+  "./fonts/fonts.css"
+];
+
+// Bundled fonts and icons — local copies so the app works fully offline on
+// the very first launch (no CDN round-trip for fonts.gstatic.com / icons8).
+const STATIC_ASSETS = [
+  "./fonts/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2",
+  "./fonts/QGYvz_MVcBeNP4NJuktqUYLkn8BJ.woff2",
+  "./fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+  "./fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2",
+  "./icons/bicycle-192.png",
+  "./icons/bicycle-512.png"
 ];
 
 const MAP_ASSETS = [
@@ -88,9 +100,10 @@ self.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(CACHE_NAME).then(async (cache) => {
       await cache.addAll(APP_SHELL_ASSETS);
-      // Best-effort precache of route maps (a single failure must not abort install).
+      // Best-effort precache of fonts, icons and route maps
+      // (a single failure must not abort the whole install).
       await Promise.all(
-        MAP_ASSETS.map((url) => cache.add(url).catch(() => {}))
+        [...STATIC_ASSETS, ...MAP_ASSETS].map((url) => cache.add(url).catch(() => {}))
       );
     }).then(() => self.skipWaiting())
   );
